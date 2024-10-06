@@ -23,7 +23,8 @@ def load(dataset="data/candy-data.csv"):
         "DROP TABLE IF EXISTS Candy_DB"
     )  # check if the table already exists, put the column of our tables below
     c.execute(
-        "CREATE TABLE Candy_DB (competitorname, chocolate, fruity, caramel, peanutyalmondy, nougat, crispedricewafer, hard, bar, pluribus, sugarpercent, pricepercent, winpercent)"
+        "CREATE TABLE Candy_DB (competitorname, chocolate, fruity, caramel, peanutyalmondy, "
+        "nougat, crispedricewafer, hard, bar, pluribus, sugarpercent, pricepercent, winpercent)"
     )
 
     # insert

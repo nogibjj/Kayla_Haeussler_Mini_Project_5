@@ -8,7 +8,8 @@ def create():
     conn = sqlite3.connect("Candy_DB.db")
     cursor = conn.cursor()
     cursor.execute(
-        "INSERT INTO Candy_DB VALUES ('Data Engineering','0','0','0','0', '0','0','0','0', '0','0','0','0')"
+        "INSERT INTO Candy_DB VALUES "
+        "('Data Engineering','0','0','0','0', '0','0','0','0', '0','0','0','0')"
     )
     conn.commit()
     conn.close()
