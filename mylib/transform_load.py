@@ -1,7 +1,5 @@
 """
 Transforms and Loads data into the local SQLite3 database
-Example:
-,general name,count_products,ingred_FPro,avg_FPro_products,avg_distance_root,ingred_normalization_term,semantic_tree_name,semantic_tree_node
 """
 
 import sqlite3
@@ -29,12 +27,14 @@ def load(dataset="data/candy-data.csv"):
 
     # insert
     c.executemany(
-        "INSERT INTO Candy_DB VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", payload
+        "INSERT INTO Candy_DB VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        payload,
     )
     conn.commit()
     conn.close()
     return (
-        "Candy_DB.db"  # he uses this as a test to make sure the assert statement runs
+        "Candy_DB.db"
+        # uses this as a test to make sure the assert statement runs
     )
 
 
