@@ -13,7 +13,7 @@ def test_extract():
 
 
 def test_load():
-    assert load() == "candy-data.db"
+    assert load() == "Candy_DB.db"
 
 
 def test_create():
