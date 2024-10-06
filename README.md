@@ -43,15 +43,20 @@ The data set used in this project comes from the '''fivethirtyeight''' repositor
 https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking
 ## ETLQ: Extract, Transform, Load, Query
 ![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
+
 ### Extract:
 Extract a dataset from a URL.
-### Transform:
-Transform the data by clening, filtering, enriching, etc to get it ready for analysis.
-### Load: 
-Load the transformed data into a SQLite database table using Python's sqlite module.
-### Query: CRUD
+![extract](README_images/extract.png)
+
+### Transform & Load:
+Transform the data by clening, filtering, enriching, etc to get it ready for analysis. Load the transformed data into a SQLite database table using Python's sqlite module.
+![transform_load](README_images/transform_load.png)
+
+### Query (CRUD)
 Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
-#### Create, Read Update Delete
+#### Create, Read, Update, Delete
+![createreadupdate](README_images/C_R_U.png)
+![D](README_images/D.png)
 
 
 
