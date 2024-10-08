@@ -1,5 +1,6 @@
 # Kayla_Haeussler_MiniProject_5
 
+[![CI](https://github.com/nogibjj/Kayla_Haeussler_Mini_Project_5/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Kayla_Haeussler_Mini_Project_5/actions/workflows/cicd.yml)
 
 IDS 706: Mini Project 5  
 Python Script Interacting with SQL Database  
