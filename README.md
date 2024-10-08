@@ -44,7 +44,7 @@ The data set used in this project comes from the '''fivethirtyeight''' repositor
 https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking
 ## ETLQ: Extract, Transform, Load, Query
 ![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
-
+The above image references GroceryDB, in our case this is the Candy_DB database. This image was forked from the repo this repo was initially forked from and is not my own creation.
 ### Extract:
 Extract a dataset from a URL.
 ![extract](README_images/extract.png)
