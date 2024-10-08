@@ -4,7 +4,7 @@ import sqlite3
 
 
 def create():
-    """Create a fake data"""
+    """Create fake data"""
     conn = sqlite3.connect("Candy_DB.db")
     cursor = conn.cursor()
     cursor.execute(
@@ -27,7 +27,7 @@ def read():
 
 
 def update():
-    """Update day of week value of 1 and set the births to 1000"""
+    """Update competior name to be loser where winpercent <50%"""
     conn = sqlite3.connect("Candy_DB.db")
     cursor = conn.cursor()
     cursor.execute(
@@ -39,10 +39,10 @@ def update():
 
 
 def delete():
-    """Delete all rows where candy contains chocolate"""
+    """Delete all rows we marked as loser in the update"""
     conn = sqlite3.connect("Candy_DB.db")
     cursor = conn.cursor()
-    cursor.execute("DELETE FROM Candy_DB WHERE chocolate = '1';")
+    cursor.execute("DELETE FROM Candy_DB WHERE competitorname == 'LOSER';")
     conn.commit()
     conn.close()
     return "Sucessfully deleted!"

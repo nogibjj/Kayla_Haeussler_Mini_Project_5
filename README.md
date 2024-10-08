@@ -55,10 +55,14 @@ Transform the data by clening, filtering, enriching, etc to get it ready for ana
 ### Query (CRUD)
 Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
 #### Create, Read, Update, Delete
-![createreadupdate](README_images/C_R_U.png)
-![D](README_images/D.png)
+The following shows the output when the ```main.py``` script is run, showing through output that the database queries are successful. ```read()``` is utilized to print the database to the terminal
 
+![create](README_images/create.png)
+![update](README_images/update.png)
+![update](README_images/delete.png)
 
+## References
+https://github.com/nogibjj/sqlite-lab
 
 
 
